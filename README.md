@@ -25,8 +25,23 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
 
 ## Instalasi
 ### Persyaratan
-- Python 3.6 atau lebih baru
-- pip (package manager Python)
+- Python 3.6 atau lebih baru.
+- pip (package manager Python).
+- Jika Anda menggunakan sistem operasi Linux, Anda mungkin perlu menginstal paket development dependensi berikut ini untuk lxml:
+  ```bash
+  # Debian/Ubuntu
+  sudo apt-get install libxml2-dev libxslt-dev python-dev
+  # RHEL/CentOS
+  sudo yum install libxml2-devel libxslt-devel python-devel
+  ```
+- Untuk pengguna Windows, dependensi biasanya bisa diinstal langsung menggunakan pip tanpa persyaratan tambahan.
+- Untuk environment yang terisolasi, disarankan menggunakan virtual environment berikut:
+  ```bash
+  python -m venv secretfinder-env
+  source secretfinder-env/bin/activate  # Linux/MacOS
+  secretfinder-env\Scripts\activate    # Windows
+  pip install -r requirements.txt
+  ```
 
 ## Langkah Instalasi
 ### 1. Clone repository
