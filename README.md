@@ -83,3 +83,19 @@ Kontribusi dipersilakan! Silakan buka issue atau pull request untuk:
 
 ## Lisensi
 Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](https://github.com/M3PH1S69/SecretFinder-Final-Version/blob/main/LICENSE) untuk detailnya.
+
+##
+> [!NOTE]
+> Alat ini hanya untuk tujuan pengujian keamanan yang sah.
+
+> [!TIP]
+> Jangan menyalah gunakan tool ini untuk tindakan kriminal.
+
+> [!IMPORTANT]
+> Anda orang pintar, perhatikan penggunaan anda pada tool ini.
+
+> [!WARNING]
+> Jangan gunakan untuk aktivitas ilegal.
+
+> [!CAUTION]
+> Pengguna bertanggung jawab penuh atas penggunaan alat ini.
