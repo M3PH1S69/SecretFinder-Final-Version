@@ -31,6 +31,7 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
   ```bash
   # Debian/Ubuntu
   sudo apt-get install libxml2-dev libxslt-dev python-dev
+  
   # RHEL/CentOS
   sudo yum install libxml2-devel libxslt-devel python-devel
   ```
@@ -38,8 +39,11 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
 - Untuk environment yang terisolasi, disarankan menggunakan virtual environment berikut:
   ```bash
   python -m venv secretfinder-env
+  
   source secretfinder-env/bin/activate  # Linux/MacOS
+  
   secretfinder-env\Scripts\activate    # Windows
+  
   pip install -r requirements.txt
   ```
 
