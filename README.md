@@ -16,7 +16,9 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
   - File ekspor Burp Suite
 
 🛠 Fitur Tambahan
-  - Ekstraksi URL JavaScript dari HTML
+  - Filter URL JavaScript yang lebih fleksibel
+  - Dukungan untuk BurpSuite yang lebih baik
+  - Opsi baru untuk koneksi tidak aman (-k)
   - Filter hasil dengan regex kustom
   - Output dalam format HTML atau CLI
   - Dukungan proxy dan custom headers
