@@ -82,4 +82,4 @@ Kontribusi dipersilakan! Silakan buka issue atau pull request untuk:
 - Menambahkan fitur baru
 
 ## Lisensi
-Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE]() untuk detailnya.
+Proyek ini dilisensikan di bawah Lisensi MIT - lihat file [LICENSE](https://github.com/M3PH1S69/SecretFinder-Final-Version/blob/main/LICENSE) untuk detailnya.
