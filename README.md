@@ -69,11 +69,11 @@ SecretFinder -h
 ## Penggunaan Dasar
 ### Scan URL
 ```bash
-SecretFinder -i https://example.com -o results.txt
+SecretFinder -i https://example.com -o results.html
 ```
 ### Scan List File
 ```bash
-SecretFinder -i /path/to/list.js -o -results.tct
+SecretFinder -i /path/to/list.js -o -results.html
 ```
 ### Filter Scan URL hanya yang mengandung 'jquery'
 ```bash
