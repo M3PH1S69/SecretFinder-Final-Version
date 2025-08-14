@@ -1,0 +1,6 @@
+requests
+jsbeautifier
+lxml
+requests-file
+urllib3
+argparse
