@@ -51,15 +51,15 @@ cd SecretFinder-Final-Version && chmod +x SecretFinder
 ```
 ### 2. Instal dependensi
 ```bash
-pip install -r requirements.txt
+pip install -r requirements.txt --break-system-packages
 ```
 ### 3. Copy File ke /usr/bin/ (supaya bisa di jalankan dari luar)
 ```bash
-sudo cp SecretFinder/ /usr/bin/
+sudo cp SecretFinder /usr/bin/
 ```
 ### 4. Verifikasi instalasi
 ```bash
-python3 SecretFinder -h
+SecretFinder -h
 ```
 
 ## Penggunaan Dasar
