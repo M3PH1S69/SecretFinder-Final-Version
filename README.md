@@ -54,13 +54,13 @@ SecretFinder -i https://example.com -o results.txt
 ```bash
 SecretFinder -i /path/to/list.js -o -results.tct
 ```
-### Ekstrak JS dari HTML dan Scan
+### Filter Scan URL hanya yang mengandung 'jquery'
 ```bash
-SecretFinder -i https://example.com -e -o results.html
+SecretFinder -i https://example.com -e -n jquery
 ```
-### Gunakan Regex Kustom
+### Gunakan Proxy dan abaikan Verifikasi SSL
 ```bash
-SecretFinder -i https://example.com -r "your_regex_pattern"
+SecretFinder -i https://example.com -e -p http://proxy:8080 -k
 ```
 ### Opsi Lainnya
 ```bash
