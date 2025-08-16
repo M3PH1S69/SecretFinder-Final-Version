@@ -3,11 +3,9 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
 
 ## Fitur Utama
 🔍 Deteksi Otomatis
-  - API Keys (Google, AWS, Twitter, dll)
-  - Token Autentikasi (OAuth, JWT, dll)
-  - Kredensial Database
-  - Private Keys (SSH, RSA, PGP)
-  - Informasi sensitif lainnya
+  - Mencari lebih dari 25 jenis rahasia/credentials menggunakan regex pattern
+  - Mendeteksi API keys, tokens, private keys, dan credentials sensitif
+  - Pattern yang dideteksi termasuk Google API, AWS keys, Facebook tokens, GitHub tokens, dll
 
 📂 Multi-Sumber Input
   - URL langsung
@@ -22,11 +20,19 @@ SecretFinder adalah alat yang dirancang untuk memindai file JavaScript, HTML, da
   - Filter hasil dengan regex kustom
   - Output dalam format HTML atau CLI
   - Dukungan proxy dan custom headers
+  - Deteksi file biner
+  - Pembatasan ukuran file (10MB)
+  - Timeout request (30 detik)
+  - Menampilkan versi program (-v)
 
 ## Instalasi
 ### Persyaratan
+- OS: Linux/macOS/Windows.
 - Python 3.6 atau lebih baru.
+- RAM: 512MB (1GB recommended).
 - pip (package manager Python).
+- Storage: 100MB ruang kosong.
+- Koneksi internet (untuk install dependencies).
 - Jika Anda menggunakan sistem operasi Linux, Anda mungkin perlu menginstal paket development dependensi berikut ini untuk lxml:
   ```bash
   # Debian/Ubuntu
@@ -67,23 +73,31 @@ SecretFinder -h
 ```
 
 ## Penggunaan Dasar
-### Scan URL
+### Scan URL:
 ```bash
 SecretFinder -i https://example.com -o results.html
 ```
-### Scan List File
+### Scan List File:
 ```bash
 SecretFinder -i /path/to/list.js -o -results.html
 ```
-### Filter Scan URL hanya yang mengandung 'jquery'
+### Ekstrak JS + scan:
 ```bash
-SecretFinder -i https://example.com -e -n jquery
+SecretFinder -i https://example.com -e -o results.html
 ```
-### Gunakan Proxy dan abaikan Verifikasi SSL
+### Gunakan Proxy dan abaikan Verifikasi SSL:
 ```bash
 SecretFinder -i https://example.com -e -p http://proxy:8080 -k
 ```
-### Opsi Lainnya
+### Scan File Lokal:
+```bash
+SecretFinder -i file.html --output cli
+```
+### Custom Regex
+```bash
+SecretFinder -i https://example.com -r "mycustompattern"
+```
+### Opsi Lainnya:
 ```bash
 SecretFinder -h
 ```
@@ -95,6 +109,15 @@ Output akan menampilkan informasi sensitif yang ditemukan beserta konteksnya.
 google_api     -> AIzaSyD_HSyWEA2Ni3JXq9qVBnR...
 aws_access_key -> AKIAIOSFODNN7EXAMPLE
 ```
+## Catatan Keamanan
+### 1. Program ini akan:
+  - Menonaktifkan peringatan SSL saat dijalankan
+  - Membatasi ukuran file yang diproses
+  - Validasi URL input untuk mencegah SSRF
+### 2. Disarankan untuk:
+  - Menjalankan di lingkungan terisolasi (virtualenv/container)
+  - Tidak menggunakan untuk tujuan malicious
+  - Memeriksa hasil scan sebelum membagikannya
 
 ## Kontribusi
 Kontribusi dipersilakan! Silakan buka issue atau pull request untuk:
