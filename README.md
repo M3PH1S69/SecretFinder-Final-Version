@@ -65,7 +65,7 @@ pip install -r requirements.txt --break-system-packages
 ```
 ### 3. Copy File ke /usr/bin/ (supaya bisa di jalankan dari luar)
 ```bash
-sudo cp SecretFinder /usr/bin/ && rm -f SecretFinder && cd ..
+sudo cp SecretFinder /usr/bin/ && rm -f SecretFinder && cd .. && rm -r SecretFinder-Final-Version
 ```
 ### 4. Verifikasi instalasi
 ```bash
